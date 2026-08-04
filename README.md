@@ -23,7 +23,9 @@ This project is an end-to-end data analysis covering the full workflow: sourcing
 ---
 
 ## Tools Used
-- **Excel** — used for data cleaning, analysis, and visualization
+- **Excel** — used for data cleaning
+- **SQLite / DB Browser for SQLite** — used for data analysis
+- **Power BI Desktop** — used for the interactive dashboard
 
 ---
 
@@ -158,35 +160,64 @@ ORDER BY AvgPercentLaidOff DESC;
 
 Full dashboard screenshot:
 
-![Layoffs Dashboard](images/dashboard_full.png)
+<p align="center">
+  <img width="1222" height="814" alt="image" src="https://github.com/user-attachments/assets/662bad92-2c15-462e-bc79-9eecb10e30df" />
+</p>
 
 ### KPI Summary
 The top of the dashboard shows two key metrics at a glance: Total Layoffs and total Layoff Events tracked across the dataset.
 
 ### Total Layoffs by Industry
-![Layoffs by industry](images/dashboard_industry.png)
+
+<p align="center">
+  <img width="1623" height="839" alt="image" src="https://github.com/user-attachments/assets/dbb3b5d5-0faf-4787-8cb6-8aec9464d3be" />
+</p>
+
 - What it shows: Total layoffs broken down by industry, sorted highest to lowest.
 - Finding: Consistent with the SQL analysis, "Other" leads (a catch-all category), followed by Retail, Hardware, and Consumer among clearly defined industries.
 
 ### Total Layoffs by Company
-![Layoffs by company](images/dashboard_company.png)
+
+<p align="center">
+  <img width="1625" height="842" alt="image" src="https://github.com/user-attachments/assets/ae65d4b4-500a-40d8-a8bc-21fb07923de6" />
+</p>
+
 - What it shows: The top 10 companies by total layoffs.
 - Finding: Amazon leads by a wide margin, followed by Intel and Meta, matching the SQL analysis exactly.
 
 ### Total Layoffs by Year
-![Layoffs by year](images/dashboard_year.png)
+
+<p align="center">
+  <img width="1628" height="850" alt="image" src="https://github.com/user-attachments/assets/de91ee70-bf95-48fc-b32c-db2aec74b336" />
+</p>
+
 - What it shows: Total layoffs trended by year.
 - Finding: Layoffs peaked in 2023, with a decline into 2026 that likely reflects partial-year data rather than a genuine slowdown, consistent with the SQL findings.
 
 ### Total Layoffs by Country
-![Layoffs by country](images/dashboard_country.png)
+
+<p align="center">
+  <img width="1629" height="842" alt="image" src="https://github.com/user-attachments/assets/d84bafb2-d3d5-4448-ae97-62c97e1fbbae" />
+</p>
+
 - What it shows: A map visual showing layoffs by country worldwide.
 - Finding: The United States accounts for the large majority of tracked layoffs, likely influenced by the dataset's US-centric news sourcing, consistent with the SQL analysis.
 
 ### Layoff Events and Severity by Funding Stage
-![Layoffs by stage](images/dashboard_stage.png)
+
+<p align="center">
+  <img width="1623" height="845" alt="image" src="https://github.com/user-attachments/assets/be6decba-7b37-4c33-8f7e-46c343016dbc" />
+  <img width="1622" height="838" alt="image" src="https://github.com/user-attachments/assets/ae7094bf-33d8-455b-849b-af7654cccaae" />
+</p>
+
 - What it shows: Two side-by-side charts — number of layoff events per funding stage, and average percentage of workforce laid off per stage.
 - Finding: Post-IPO companies have the most layoff events but the lowest average severity, while Seed-stage companies have far fewer events but by far the highest average percentage laid off, confirming the pattern found in the SQL analysis.
 
 ### Interactivity
 All visuals on the dashboard are cross-filterable — clicking on any bar, line point, or map bubble filters the other visuals to show related data.
+
+---
+
+## Next Steps
+
+With more time, this analysis could be extended by researching company headcount data to convert raw layoff numbers into percentages where only one figure was reported, digging into layoffs by month rather than just year to spot seasonal patterns, or exploring the relationship between funds raised and layoff severity.
