@@ -46,7 +46,7 @@ The raw dataset had several columns with missing values. Each was reviewed indiv
 
 ### 1. Which industries had the most layoffs?
 
-- Query: []()
+- Query: [Layoffs by Industry](queries/layoffs_by_industry.sql)
 
 ```sql
 SELECT industry, SUM(total_laid_off) AS TotalLaidOff
@@ -63,7 +63,7 @@ ORDER BY TotalLaidOff DESC;
 
 ### 2. Which companies had the largest layoffs?
 
-- Query:
+- Query: [Layoffs by Company](queries/layoffs_by_company.sql)
 
 ```sql
 SELECT
@@ -83,7 +83,7 @@ LIMIT 10;
 
 ### 3. How have layoffs trended over time?
 
-- Query: 
+- Query: [Layoffs Over Time](queries/layoffs_over_time.sql)
 
 ```sql
 SELECT 
@@ -101,7 +101,8 @@ ORDER BY year ASC;
 - Finding: Layoffs peaked in 2023 at 265,660, more than triple the 2020 total of 80,998. 2020's lower total likely reflects the earliest phase of COVID-era disruption before the larger wave of tech layoffs hit in 2022-2023. 2026 shows a decline to 124,538, though this year's data is only partial (through July), so it's not yet clear whether this reflects a genuine slowdown or simply an incomplete year.
 
 ### 4. Which countries were hit hardest?
-- Query: 
+
+- Query: [Layoffs by Country](queries/layoffs_by_country.sql)
 
 ```sql
 SELECT
@@ -120,7 +121,8 @@ LIMIT 10;
 - Finding: The United States accounts for the largest share of tracked layoffs by far, at 657,447, with India a distant second at 67,509, followed by Germany (32,055), the United Kingdom (24,694), and the Netherlands (22,175). This gap is likely inflated somewhat by the dataset's sourcing — the underlying news outlets (Bloomberg, SF Business Times, TechCrunch, NYT) are largely US-based, so US layoffs are probably tracked more thoroughly than layoffs in other countries, rather than the US necessarily accounting for this large a share of layoffs in reality.
 
 ### 5. Does funding stage relate to layoff likelihood?
-- Query 1: 
+
+- Query 1: [Layoffs Count by Stage](queries/layoffs_event_count_by_stage.sql)
 
 ```sql
 SELECT stage, COUNT(*) AS EventCount
@@ -133,7 +135,7 @@ ORDER BY EventCount DESC;
   <img width="309" height="440" alt="image" src="https://github.com/user-attachments/assets/08cdb6c7-fb66-4cc6-b72e-6355f0346573" />
 </p>
 
-- Query 2: 
+- Query 2: [Layoffs Percent by Stage](queries/layoffs_avg_percent_by_stage.sql)
 
 ```sql
 SELECT stage, ROUND(AVG(percentage_laid_off), 2) AS AvgPercentLaidOff
