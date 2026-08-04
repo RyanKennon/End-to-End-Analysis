@@ -149,6 +149,44 @@ ORDER BY AvgPercentLaidOff DESC;
 </p>
 
 - Finding: Post-IPO companies had by far the most layoff events (1,091), likely reflecting how many large, established companies fall into this stage. However, when layoffs did occur, they tended to be relatively contained, cutting an average of about 16.5% of the workforce. Seed-stage companies show the opposite pattern: far fewer layoff events overall, but when they happen, they're much more severe, cutting an average of about 83% of the workforce. This suggests funding stage relates more to the severity of layoffs than to how often they happen, with early-stage companies less likely to lay off staff but more likely to be shutting down or drastically downsizing when they do, while later-stage companies have more frequent but comparatively smaller workforce reductions.
+
 ---
 
-## Next Steps
+## Dashboard Overview
+
+📊 [Download the interactive dashboard (.pbix file)](layoff_db.pbix) — requires [Power BI Desktop](https://www.microsoft.com/en-us/power-platform/products/power-bi/downloads) to open
+
+Full dashboard screenshot:
+
+![Layoffs Dashboard](images/dashboard_full.png)
+
+### KPI Summary
+The top of the dashboard shows two key metrics at a glance: Total Layoffs and total Layoff Events tracked across the dataset.
+
+### Total Layoffs by Industry
+![Layoffs by industry](images/dashboard_industry.png)
+- What it shows: Total layoffs broken down by industry, sorted highest to lowest.
+- Finding: Consistent with the SQL analysis, "Other" leads (a catch-all category), followed by Retail, Hardware, and Consumer among clearly defined industries.
+
+### Total Layoffs by Company
+![Layoffs by company](images/dashboard_company.png)
+- What it shows: The top 10 companies by total layoffs.
+- Finding: Amazon leads by a wide margin, followed by Intel and Meta, matching the SQL analysis exactly.
+
+### Total Layoffs by Year
+![Layoffs by year](images/dashboard_year.png)
+- What it shows: Total layoffs trended by year.
+- Finding: Layoffs peaked in 2023, with a decline into 2026 that likely reflects partial-year data rather than a genuine slowdown, consistent with the SQL findings.
+
+### Total Layoffs by Country
+![Layoffs by country](images/dashboard_country.png)
+- What it shows: A map visual showing layoffs by country worldwide.
+- Finding: The United States accounts for the large majority of tracked layoffs, likely influenced by the dataset's US-centric news sourcing, consistent with the SQL analysis.
+
+### Layoff Events and Severity by Funding Stage
+![Layoffs by stage](images/dashboard_stage.png)
+- What it shows: Two side-by-side charts — number of layoff events per funding stage, and average percentage of workforce laid off per stage.
+- Finding: Post-IPO companies have the most layoff events but the lowest average severity, while Seed-stage companies have far fewer events but by far the highest average percentage laid off, confirming the pattern found in the SQL analysis.
+
+### Interactivity
+All visuals on the dashboard are cross-filterable — clicking on any bar, line point, or map bubble filters the other visuals to show related data.
