@@ -132,7 +132,7 @@ ORDER BY EventCount DESC;
 ```
 
 <p align="center">
-  <img width="309" height="440" alt="image" src="https://github.com/user-attachments/assets/08cdb6c7-fb66-4cc6-b72e-6355f0346573" />
+  <img width="214" height="441" alt="image" src="https://github.com/user-attachments/assets/6757abbd-eaf6-4a9d-b9b0-5bce90bcd12f" />
 </p>
 
 - Query 2: [Layoffs Percent by Stage](queries/layoffs_avg_percent_by_stage.sql)
