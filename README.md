@@ -58,7 +58,7 @@ ORDER BY TotalLaidOff DESC;
 ```
 
 <p align="center">
-  <img width="219" height="280" alt="image" src="https://github.com/user-attachments/assets/10b01cd0-e362-4e6b-83fb-e2a2241d6eec" />
+  <img src="Images/Image%201.png" img width="219" height="280" alt="image">
 </p>
 
 - Finding: "Other" leads in total layoffs at 115,800, though this is a catch-all category rather than a specific industry, making it less informative on its own. Among clearly defined industries, Retail (108,006) and Hardware (105,200) had the highest layoff totals, followed by Consumer (97,997) and Finance (70,162).
@@ -78,7 +78,7 @@ LIMIT 10;
 ```
 
 <p align="center">
-  <img width="182" height="286" alt="image" src="https://github.com/user-attachments/assets/28137005-1f7f-4e31-8dd4-b0c0f29c8fd7" />
+  <img src="Images/Image%202.png" img width="182" height="286" alt="image">
 </p>
 
 - Finding: Amazon had the largest total layoffs of any single company at 59,291, well ahead of Intel (43,115) and Meta (35,700). Microsoft (34,855) and Dell (23,650) round out the top 5. These figures reflect large tech companies with correspondingly large workforces, so a high total doesn't necessarily mean a high percentage of that company's staff was affected.
@@ -97,7 +97,7 @@ ORDER BY year ASC;
 ```
 
 <p align="center">
-  <img width="127" height="204" alt="image" src="https://github.com/user-attachments/assets/8ce8fe21-d4ec-47b6-90ae-521d4c5c49b7" />
+  <img src="Images/Image%203.png" img width="127" height="204" alt="image">
 </p>
 
 - Finding: Layoffs peaked in 2023 at 265,660, more than triple the 2020 total of 80,998. 2020's lower total likely reflects the earliest phase of COVID-era disruption before the larger wave of tech layoffs hit in 2022-2023. 2026 shows a decline to 124,538, though this year's data is only partial (through July), so it's not yet clear whether this reflects a genuine slowdown or simply an incomplete year.
@@ -117,7 +117,7 @@ LIMIT 10;
 ```
 
 <p align="center">
-  <img width="215" height="284" alt="image" src="https://github.com/user-attachments/assets/1986b53e-42e4-42d5-8ff7-fe8b78fcf157" />
+  <img src="Images/Image%204.png" img width="215" height="284" alt="image">
 </p>
 
 - Finding: The United States accounts for the largest share of tracked layoffs by far, at 657,447, with India a distant second at 67,509, followed by Germany (32,055), the United Kingdom (24,694), and the Netherlands (22,175). This gap is likely inflated somewhat by the dataset's sourcing — the underlying news outlets (Bloomberg, SF Business Times, TechCrunch, NYT) are largely US-based, so US layoffs are probably tracked more thoroughly than layoffs in other countries, rather than the US necessarily accounting for this large a share of layoffs in reality.
@@ -134,7 +134,7 @@ ORDER BY EventCount DESC;
 ```
 
 <p align="center">
-  <img width="214" height="441" alt="image" src="https://github.com/user-attachments/assets/6757abbd-eaf6-4a9d-b9b0-5bce90bcd12f" />
+  <img src="Images/Image%205.png" img width="214" height="441" alt="image">
 </p>
 
 - Query 2: [Layoffs Percent by Stage](queries/layoffs_avg_percent_by_stage.sql)
@@ -147,7 +147,7 @@ ORDER BY AvgPercentLaidOff DESC;
 ```
 
 <p align="center">
-  <img width="250" height="436" alt="image" src="https://github.com/user-attachments/assets/d7a77d2b-cf33-4700-a0ca-995660ff49e5" />
+  <img src="Images/Image%206.png" img width="250" height="436" alt="image">
 </p>
 
 - Finding: Post-IPO companies had by far the most layoff events (1,091), likely reflecting how many large, established companies fall into this stage. However, when layoffs did occur, they tended to be relatively contained, cutting an average of about 16.5% of the workforce. Seed-stage companies show the opposite pattern: far fewer layoff events overall, but when they happen, they're much more severe, cutting an average of about 83% of the workforce. This suggests funding stage relates more to the severity of layoffs than to how often they happen, with early-stage companies less likely to lay off staff but more likely to be shutting down or drastically downsizing when they do, while later-stage companies have more frequent but comparatively smaller workforce reductions.
@@ -161,7 +161,7 @@ ORDER BY AvgPercentLaidOff DESC;
 Full dashboard screenshot:
 
 <p align="center">
-  <img width="1222" height="814" alt="image" src="https://github.com/user-attachments/assets/662bad92-2c15-462e-bc79-9eecb10e30df" />
+  <img src="Images/Image%207.png" img width="1222" height="814" alt="image">
 </p>
 
 ### KPI Summary
@@ -170,7 +170,7 @@ The top of the dashboard shows two key metrics at a glance: Total Layoffs and to
 ### Total Layoffs by Industry
 
 <p align="center">
-  <img width="1623" height="839" alt="image" src="https://github.com/user-attachments/assets/dbb3b5d5-0faf-4787-8cb6-8aec9464d3be" />
+  <img src="Images/Image%208.png" img width="1623" height="839" alt="image">
 </p>
 
 - What it shows: Total layoffs broken down by industry, sorted highest to lowest.
@@ -179,7 +179,7 @@ The top of the dashboard shows two key metrics at a glance: Total Layoffs and to
 ### Total Layoffs by Company
 
 <p align="center">
-  <img width="1625" height="842" alt="image" src="https://github.com/user-attachments/assets/ae65d4b4-500a-40d8-a8bc-21fb07923de6" />
+  <img src="Images/Image%209.png" img width="1625" height="842" alt="image">
 </p>
 
 - What it shows: The top 10 companies by total layoffs.
@@ -188,7 +188,7 @@ The top of the dashboard shows two key metrics at a glance: Total Layoffs and to
 ### Total Layoffs by Year
 
 <p align="center">
-  <img width="1628" height="850" alt="image" src="https://github.com/user-attachments/assets/de91ee70-bf95-48fc-b32c-db2aec74b336" />
+  <img src="Images/Image%2010.png" img width="1628" height="850" alt="image">
 </p>
 
 - What it shows: Total layoffs trended by year.
@@ -197,7 +197,7 @@ The top of the dashboard shows two key metrics at a glance: Total Layoffs and to
 ### Total Layoffs by Country
 
 <p align="center">
-  <img width="1629" height="842" alt="image" src="https://github.com/user-attachments/assets/d84bafb2-d3d5-4448-ae97-62c97e1fbbae" />
+  <img src="Images/Image%2011.png" img width="1629" height="842" alt="image">
 </p>
 
 - What it shows: A map visual showing layoffs by country worldwide.
@@ -206,8 +206,8 @@ The top of the dashboard shows two key metrics at a glance: Total Layoffs and to
 ### Layoff Events and Severity by Funding Stage
 
 <p align="center">
-  <img width="1623" height="845" alt="image" src="https://github.com/user-attachments/assets/be6decba-7b37-4c33-8f7e-46c343016dbc" />
-  <img width="1622" height="838" alt="image" src="https://github.com/user-attachments/assets/ae7094bf-33d8-455b-849b-af7654cccaae" />
+  <img src="Images/Image%2012.png" img width="1623" height="845" alt="image">
+  <img src="Images/Image%2013.png" img width="1622" height="838" alt="image">
 </p>
 
 - What it shows: Two side-by-side charts — number of layoff events per funding stage, and average percentage of workforce laid off per stage.
